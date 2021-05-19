@@ -1,0 +1,7 @@
+
+.vscode/*
+*.txt
+jarclasses/*
+javadoc/*
+libs/*
+bin/*
