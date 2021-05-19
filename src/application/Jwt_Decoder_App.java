@@ -17,7 +17,7 @@ import javafx.geometry.Rectangle2D;
  * @author Josh James
  * @author Klaus Capani
  * @author Jorid Spaha
- * @version 1.0.0
+ * @version 1.0.0 
  */
 public class Jwt_Decoder_App extends Application {
 
