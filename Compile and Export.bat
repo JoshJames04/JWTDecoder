@@ -49,7 +49,7 @@ jar --create --file=libs/%ParentFolderName%.jar --main-class=application.Launche
 
 echo.
 echo --Packaging into MSI Installer--
-jpackager create-installer --output build --input libs --name %ParentFolderName% --main-jar %ParentFolderName%.jar --module-path "%JAVA_HOME%"\jmods --icon jarclasses\application\resources\img\JWTIcon.ico --singleton --win-shortcut --win-menu
+jpackager create-installer --output build --input libs --name %ParentFolderName% --main-jar %ParentFolderName%.jar --module-path "%JAVA_HOME%"\jmods --icon jarclasses\application\resources\img\icon.ico --singleton --win-shortcut --win-menu
 
 echo.
 
