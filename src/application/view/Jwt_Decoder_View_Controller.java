@@ -13,42 +13,32 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
 /**
- * The controller for the FXML. Implements the JavaFX Initializable class
  * 
- * @author John McNeil
- * @author Josh James
- * @author Klaus
- * @author Jorid
- * @version 1.0.0
- *
+ * @author Jorid Spaha
  */
 public class Jwt_Decoder_View_Controller implements Initializable {
 
-	/**
-	 * @param arg0
-	 * @param arg1
-	 */
+	@FXML
+	private TextArea textJwt;
+
+	@FXML
+	private TextArea payloadJwt;
+
+	@FXML
+	private TextArea headerJwt;
+
+	@FXML
+	private Button buttonJwt;
+
+	@FXML
+	private Button clearButtonJwt;
+
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
 		// Use this method to set any objects in the UI on opening
 		// Don't think we need it but just in case.
 	}
 
-	@FXML
-	private TextArea textJwt;
-	@FXML
-	private TextArea payloadJwt;
-	@FXML
-	private TextArea headerJwt;
-	@FXML
-	private Button buttonJwt;
-	@FXML
-	private Button clearButtonJwt;
-
-	/**
-	 * Handles the decoding when the decode button is pressed
-	 */
 	@FXML
 	private void handleDecode() {
 		// System.out.println(textJwt.getText());
@@ -81,9 +71,7 @@ public class Jwt_Decoder_View_Controller implements Initializable {
 				sb.append(payloadTail + "\n");
 				payloadJwt.setText(sb.toString());
 			});
-		}
-
-		else {
+		} else {
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.setTitle("Error with JWT");
 			alert.setHeaderText("Unable to decode JWT");
@@ -92,9 +80,6 @@ public class Jwt_Decoder_View_Controller implements Initializable {
 		}
 	}
 
-	/**
-	 * Handles the clearing of all text areas when the clear button is pressed
-	 */
 	@FXML
 	private void handleClear() {
 		payloadJwt.setText("");

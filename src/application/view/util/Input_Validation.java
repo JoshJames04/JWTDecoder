@@ -7,17 +7,9 @@ import java.util.regex.Pattern;
  * Validating user input
  * 
  * @author John McNeil
- * @author Josh James
- * @author Klaus
- * @author Jorid
- * @version 1.0.0
  *
  */
 public class Input_Validation {
-
-	private Input_Validation() {
-		// Input Validation utility class
-	}
 
 	/**
 	 * Check the JSON Web Token to ensure it is a valid token Method is static as

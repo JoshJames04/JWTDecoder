@@ -5,13 +5,9 @@ import java.util.Map;
 import java.util.HashMap;
 
 /**
- * Decodes the JSON Web Token to plain english
+ * Decodes the JSON Web Token
  * 
- * @author John McNeil
  * @author Josh James
- * @author Klaus
- * @author Jorid
- * @version 1.0.0
  *
  */
 public class Jwt_Decoder {
