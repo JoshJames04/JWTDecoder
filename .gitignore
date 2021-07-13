@@ -7,3 +7,4 @@ javadoc/*
 libs/*
 bin/*
 build/*
+logs/*
